@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Itertor Pattern</title>
+</head>
+<body>
+    <script>
+        var Iterator = function (elements) {
+            this.elements = elements;
+            this.index = 0;
+        }
+
+        Iterator.prototype = {
+            hasNext: function(){
+                return this.index < this.elements.length;
+            },
+            next: function(){
+                return this.elements[this.index++];
+            },
+            reset: function(){
+                this.index = 0;
+            },
+            first: function(){
+                return elements[0];
+            }
+        }
+
+        let elements = [1, 4.5, "palabra", "hola", true];
+        let iterator = new Iterator(elements);
+
+        while(iterator.hasNext()){
+            let element = iterator.next(); 
+            console.log(element);
+        }
+        console.log("First: " + iterator.first());
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Administrador\D\mis-repos\patrones-de-diseño-C#\Prototype\Prototype\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Administrador\D\mis-repos\patrones-de-diseño-C#\Prototype\Prototype\.editorconfig" />
+  </ItemGroup>
+
+</Project>
